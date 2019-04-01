@@ -1,170 +1,157 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  
-  <title>Organique</title>
-  <link rel="shortcut icon" href="https://icons.pushnews.eu/2016/12/22/585c199f95d1f.png" type="image/x-png">
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
   body {
-      font: 400 15px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
   }
-  .modal-content{
-	background-color:white;
-	height:250px;
-	width:300px;
-	
-	}
-  
- h2 {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
   }
   h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      color: #303030;
-      font-weight: 400;
-      margin-bottom: 30px;
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
   }  
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
   .container-fluid {
-      padding: 60px 50px;
+    padding: 60px 50px;
   }
   .bg-grey {
-      background-color: #f6f6f6;
-  }
-  .bg-blue {
-	  background-color: #e6e6ff;
+    background-color: #f6f6f6;
   }
   .logo-small {
-      color: blue;
-      font-size: 50px;
+    color: #f4511e;
+    font-size: 50px;
   }
   .logo {
-      color: blue;
-      font-size: 200px;
+    color: #f4511e;
+    font-size: 200px;
   }
   .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
   }
   .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
   }
   .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: blue;
+    background-image: none;
+    color: #f4511e;
   }
   .carousel-indicators li {
-      border-color: blue;
+    border-color: #f4511e;
   }
   .carousel-indicators li.active {
-      background-color: blue;
+    background-color: #f4511e;
   }
   .item h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      font-weight: 400;
-      font-style: italic;
-      margin: 70px 0;
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
   }
   .item span {
-      font-style: normal;
+    font-style: normal;
   }
   .panel {
-      border: 1px solid blue; 
-      border-radius:0 !important;
-      transition: box-shadow 0.5s;
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
   }
   .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-      border: 1px solid blue;
-      background-color: #fff !important;
-      color: blue;
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
   }
   .panel-heading {
-      color: #fff !important;
-      background-color: blue !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
   .panel-footer {
-      background-color: white !important;
+    background-color: white !important;
   }
   .panel-footer h3 {
-      font-size: 32px;
+    font-size: 32px;
   }
   .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
+    color: #aaa;
+    font-size: 14px;
   }
   .panel-footer .btn {
-      margin: 15px 0;
-      background-color: blue;
-      color: #fff;
-  }
-.jumbotron {
-      background-image: url("https://maisbio.files.wordpress.com/2016/07/fruit-and-veg.jpg");	
-	color: #fff;
-      padding: 100px 25px;
-      font-family: 'Pacifico', cursive;
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
   }
   .navbar {
-      margin-bottom: 0;
-      background-image: url("https://maisbio.files.wordpress.com/2016/07/fruit-and-veg.jpg");	    
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-      color: white !important;
+    color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: blue !important;
-      background-color: white !important;
+    color: #f4511e !important;
+    background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: white !important;
+    border-color: transparent;
+    color: #fff !important;
   }
   footer .glyphicon {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: blue;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
   }
   .slideanim {visibility:hidden;}
   .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
   }
   @keyframes slide {
     0% {
@@ -192,19 +179,19 @@
       margin: 25px 0;
     }
     .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
+      width: 100%;
+      margin-bottom: 35px;
     }
   }
   @media screen and (max-width: 480px) {
     .logo {
-        font-size: 150px;
+      font-size: 150px;
     }
   }
   </style>
-
-
+</head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -213,141 +200,133 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Thamiris</a>
+      <a class="navbar-brand" href="#myPage">Logo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">FRUTAS E VERDURAS</a></li>
-        <li><a href="#services">LATICÍNIOS</a></li>
-        <li><a href="#portfolio">CARNES E OVOS</a></li>
-        <li><a href="#contact">BEBIDAS</a></li>
-        <li><a href="#contact">KITS, CERTAS E ASSINATURAS</a></li>
-        <li><a href="#contact">SOBRE NÓS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
 </nav>
-  </br>
-<div class="jumbotron text-center">
-<center><div class="display-inline" style="font-size:85px;"><font color="white">Organique</font></div></center>
-   <p></p> 
-</div>
-  <h2>Instagram</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>Em Breve<br><span>...</span></h4>
-      </div>
-      <div class="item">
-        <h4>Em Breve<br><span>...</span></h4>
-      </div>
-      <div class="item">
-        <h4>Em Breve<br><span>...</span></h4>
+<div class="jumbotron text-center">
+  <h1>Company</h1> 
+  <p>We specialize in blablabla</p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
       </div>
     </div>
+  </form>
+</div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
   </div>
 </div>
-  <div class="container-fluid bg-blue">
-   <center><h2></h2></center>
-  <div class="col-sm-3">
-   <h4></h4>
-   <div class="embed-responsive embed-responsive-16by9">
-   <iframe class="embed-responsive-item" width="275" height="300" src="" frameborder="0" allowfullscreen></iframe>
-   </div>
-   </div>
-   <div class="col-sm-3">
-   <h4></h4>
-   <div class="embed-responsive embed-responsive-16by9">
-   <iframe class="embed-responsive-item" width="275" height="300" src="" frameborder="0" allowfullscreen></iframe>
-   </div>
-   </div>
-   <div class="col-sm-3">
-   <h4></h4>
-   <div class="embed-responsive embed-responsive-16by9">
-   <iframe class="embed-responsive-item" width="275" height="300" src="" frameborder="0" allowfullscreen></iframe>
-   </div>
-   </div>
-   <div class="col-sm-3">   
-   <h4></h4>
-   <div class="embed-responsive embed-responsive-16by9">
-   <iframe class="embed-responsive-item" width="275" height="300" src="" frameborder="0" allowfullscreen></iframe>
-   </div>
-   </div>
-   </div>
-   </div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
-  <h2>REDES SOCIAIS</h2>
-  <h4>Para saber um pouco mais sobre meu dia a dia </h4>
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
-	  <a href="https://www.facebook.com/thamiris.moreirasilva.5"><img src="http://www.logiciel.info/wp-content/uploads/2015/03/Facebook-Logo.png" width="100" height="100"></a>
-      <h4>FACEBOOK</h4>
-      <p>Thamiris Moreira Silva</p>
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-      <a href="https://www.instagram.com/thamiris__xx/?hl=pt-br"><img src="http://pngimg.com/uploads/instagram/instagram_PNG10.png" width="100" height="100"></a>
-      <h4>INSTAGRAM</h4>
-      <p>Thamiris__xx</p>
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-      <a href="https://www.snapchat.com/add/thamirisssss/"><img src="https://cdn.worldvectorlogo.com/logos/snapchat.svg" width="100" height="100"></a>
-      <h4>SNAPCHAT</h4>
-      <p>Thamiris__xx</p>
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>
   <br><br>
- 
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portifolio</h2><br>
-  <h4>Lugares que quero conhecer</h4>
+  <h2>Portfolio</h2><br>
+  <h4>What we have created</h4>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img class="img-responsive" src="" alt="Seoul" width="400" height="300">
-        <p><strong></strong></p>
-        <p></p>
+        <img src="paris.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img class="img-responsive" src="" alt="New York" width="400" height="300">
-        <p><strong></strong></p>
-        <p></p>
+        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img class="img-responsive" src="" alt="Dubai" width="400" height="300">
-        <p><strong></strong></p>
-        <p></p>
+        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
       </div>
     </div>
   </div><br>
   
-  <h2>Instagram</h2>
+  <h2>What our customers say</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -359,13 +338,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>Em Breve<br><span>...</span></h4>
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
       </div>
       <div class="item">
-        <h4>Em Breve<br><span>...</span></h4>
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
       </div>
       <div class="item">
-        <h4>Em Breve<br><span>...</span></h4>
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
       </div>
     </div>
 
@@ -381,24 +360,110 @@
   </div>
 </div>
 
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTATOS</h2>
+  <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>O <a href="http://serra.ifes.edu.br/">IFES</a> é onde eu passo a maior parte do dia.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Espírito Santo, Brasil</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> thamirismais@gmail.com</p>
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-</br>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Visite o meu primeiro site: <a href="https://thamiriss.github.io/" title="Visit w3schools">Thamiriss.github.io</a></p>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
 </footer>
 
 <script>
@@ -409,8 +474,10 @@ $(document).ready(function(){
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
+
       // Store hash
       var hash = this.hash;
+
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -426,6 +493,7 @@ $(document).ready(function(){
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
+
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");
