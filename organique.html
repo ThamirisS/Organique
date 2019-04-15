@@ -31,9 +31,7 @@
   }  
   .jumbotron {
     background-image:url(https://static1.squarespace.com/static/5af238f12487fd07e16eed12/t/5b6cd3ad88251b1103a94e58/1533858831438/veggies%2Bwood%2Bbackground.jpg?format=1500w);
-    background-repeat: no-repeat;
-	background-image: responsive;
-	color: #fff;
+    color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
 	margin-bottom: 0;
@@ -82,7 +80,7 @@
     border-radius:0 !important;
     transition: box-shadow 0.5s;
 	width: 260px;
-	height: 300px;
+	height: 400px;
   }
   .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
@@ -108,7 +106,7 @@
     color: #fff;
   }
   .navbar {
-    margin-bottom: 0;
+    margin-bottom: 30px;
     background-color: green;
     z-index: 9999;
     border: 0;
@@ -117,6 +115,20 @@
     letter-spacing: 3.7px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
+  }
+  .navbar1 {
+    margin-bottom: none;
+    background-color: green;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 3.7px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .input-group {
+	width: 300px;
   }
   .navbar li a, .navbar .navbar-brand {
     color: #fff !important;
@@ -181,8 +193,23 @@
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-
+<nav class="navbar1 navbar-default">
+	<ul class="nav navbar-nav navbar1-left">
+		<form class="navbar-form navbar-left" action="/action_page.php">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Busque por produtos da loja...">
+				<div class="input-group-btn">
+					<button class="btn btn-default" type="submit">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+			</div>
+		</form>
+		<li><a href="#">CARRINHO</a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	</ul>
+</nav>
 <div class="jumbotron text-center">
   <h1>Organique</h1> 
   <p>Slogan</p> 
@@ -209,20 +236,6 @@
     </div>
   </div>
 </nav>
-<div id="about" class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-8">	  
-  	<form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Produtos..." required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-submit">Buscar</button>
-      </div>
-    </div>
-  </form>
-  </div>
-</div>
-</div>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
@@ -258,7 +271,7 @@
 <div id="pricing" class="container-fluid">
     <h2>MAIS VENDIDOS</h2>
   <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
+    <div class="col-sm-3 col-xs-3">
       <div class="panel panel-default text-center">
         <div class="panel-body">
           <p><strong>Farinha de Trigo Orgânica MIRELLA</strong></p>
@@ -270,7 +283,7 @@
         </div>
       </div>      
     </div>     
-    <div class="col-sm-4 col-xs-12">
+    <div class="col-sm-3 col-xs-3">
       <div class="panel panel-default text-center">
         <div class="panel-body">
           <p><strong>Fit Food Snacks - Salgadinho Vegano - Sabor Tomate e Manjericão</strong></p>
@@ -282,7 +295,7 @@
         </div>
       </div>      
     </div>       
-    <div class="col-sm-4 col-xs-12">
+    <div class="col-sm-3 col-xs-3">
       <div class="panel panel-default text-center">
         <div class="panel-body">
           <p><strong>Banana Orgânica</strong></p>
@@ -293,7 +306,19 @@
           <button class="btn btn-lg">ADICIONAR</button>
         </div>
       </div>      
-    </div>    
+    </div> 
+	<div class="col-sm-3 col-xs-3">
+      <div class="panel panel-default text-center">
+        <div class="panel-body">
+          <p><strong>Banana Orgânica</strong></p>
+		  <img src="https://mercadoorganico.com/1320-large_default/banalight-organica-600g-mj-maciel.jpg" class="img-fluid" width="100px" height="100px">
+        </div>
+        <div class="panel-footer">
+          <h4>$49<br>600 g</h4>
+          <button class="btn btn-lg">ADICIONAR</button>
+        </div>
+      </div>      
+    </div> 
   </div>
 </div>
 
