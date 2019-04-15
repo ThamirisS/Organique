@@ -1,18 +1,18 @@
 /* organico_logico: */
 
 CREATE TABLE USUARIO (
-    nome str,
-    status str,
+    nome varchar(255),
+    status varchar(255),
     cpf int,
     id serial PRIMARY KEY,
     cep int,
     n_casa int,
-    complemento str
+    complemento varchar(255)
 );
 
 CREATE TABLE PRODUTO (
     id serial PRIMARY KEY,
-    nome str,
+    nome varchar(255),
     preco float,
     validade date,
     FK_MARCA_id serial,
@@ -27,41 +27,41 @@ CREATE TABLE ITEM (
 
 CREATE TABLE MARCA (
     id serial PRIMARY KEY,
-    nome str
+    nome varchar(255)
 );
 
 CREATE TABLE COMPRA (
     id serial PRIMARY KEY,
     data date,
-    status str,
+    status varchar(255),
     FK_USUARIO_id serial
 );
 
 CREATE TABLE CATEGORIA (
     id serial PRIMARY KEY,
-    nome str
+    nome varchar(255)
 );
 
 CREATE TABLE RESTRICAO (
     id serial PRIMARY KEY,
-    tipo str
+    tipo varchar(255)
 );
 
 CREATE TABLE CONTATO (
     id serial PRIMARY KEY,
-    contato str,
+    contato varchar(255),
     FK_USUARIO_id serial,
     FK_TIPO_CONT_id serial
 );
 
 CREATE TABLE TIPO_CONT (
     id serial PRIMARY KEY,
-    tipo str
+    tipo varchar(255)
 );
 
 CREATE TABLE COMENTARIO (
     id serial PRIMARY KEY,
-    descricao str,
+    descricao varchar(255),
     FK_USUARIO_id serial,
     FK_PRODUTO_id serial
 );
