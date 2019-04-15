@@ -1,0 +1,4 @@
+insert into usuario (nome, status, cpf, cep, n_casa, complemento) 
+values ('lia', 'adm', 12345678909, 123456, 43, 'fucape'), 
+('mari', 'adm', 23412345609, 23456, 50, 'ufes'), 
+('marina', 'clt', 35478989009, 67895, 20, ' ');
