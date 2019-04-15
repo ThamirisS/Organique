@@ -3,7 +3,7 @@
 CREATE TABLE USUARIO (
     nome varchar(255),
     status varchar(255),
-    cpf int,
+    cpf bigint,
     id serial PRIMARY KEY,
     cep int,
     n_casa int,
