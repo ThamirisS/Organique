@@ -2,3 +2,66 @@ insert into usuario (nome, status, cpf, cep, n_casa, complemento)
 values ('lia', 'adm', 12345678909, 123456, 43, 'fucape'), 
 ('mari', 'adm', 23412345609, 23456, 50, 'ufes'), 
 ('marina', 'clt', 35478989009, 67895, 20, ' ');
+
+insert into marca(nome)
+values('frutas do zé'),
+      ('piracanjuba'),
+      ('piraque');
+      
+insert into categoria(nome)
+values('frutas'),
+      ('bebidas'),
+      ('snaks');
+      
+insert into restricao(tipo)
+values('organico'),
+      ('sem lactose'),
+      ('sem glúten');
+      
+insert into produto(nome, preco, validade, fk_marca_id, fk_categoria_id)
+values('melão', 3.69, '2019-04-30', 1, 1),
+      ('sequilhos', 5.50, '2023-10-09', 3, 3),
+      ('leite desnatado', 3.75, '2019-05-30', 2, 2);
+      
+insert into prod_restricao(fk_RESTRICAO_id, fk_PRODUTO_id)
+values(1, 1),
+      (3, 3),
+      (2, 2);
+            
+insert into compra(data, status, FK_USUARIO_id)
+values('2019-04-17', 'comprado', 2),
+      ('2019-05-13', 'carrinho', 1),
+      ('2019-04-16', 'carrinho', 2);
+
+alter table produto add qtd int;
+update produto set qtd = 30 where id=1;
+update produto set qtd = 12 where id=2;
+update produto set qtd = 20 where id=3;
+
+insert into item(qtd, FK_COMPRA_id)
+values(5, 1),
+      (5, 3),
+      (7, 2);  
+      
+alter table item_prod add qtd int;
+      
+insert into item_prod(fk_PRODUTO_id, FK_item_id, qtd)
+values(1, 1, 3),
+      (2, 1, 2),
+      (3, 2, 5),
+      (2, 2, 2);
+      
+insert into tipo_cont(tipo)
+values('email'),
+      ('telefone');
+      
+insert into contato(contato, fk_usuario_id, FK_TIPO_CONT_id)
+values('w@gmail.com',1, 1),
+      ('99998888', 1, 2),
+      ('2w@gmail.com',2, 1),
+      ('99998887', 2, 2),
+      ('3w@gmail.com',3, 1),
+      ('99998886', 3, 2);
+      
+insert into comentario(descricao, FK_USUARIO_id, FK_produto_id)
+values('amei',1, 1);
