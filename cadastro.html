@@ -28,61 +28,52 @@
 				<li><a href="#"><span class="glyphicon glyphicon-log-in" data-target="#myModal"></span>Login</a></li>
 			</ul>
 	</nav>
-	//poup up
-	<div class="modal fade" id="myModal" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-				  <button type="button" class="close" data-dismiss="modal">&times;</button>
-				  <center><h4 class="modal-title">LOGIN</h4></center>
-				</div>
-				<div class="modal-body">
-				  <form action="/action_page.php">
-				    <div class="form-group">
-				      <label for="email">Email:</label>
-				      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-				    </div>
-				    <div class="form-group">
-				      <label for="pwd">Senha:</label>
-				      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-				    </div>
-				    <div class="checkbox">
-					<center><label><input type="checkbox" name="remember"> Remember me</label></center>
-				    </div>
-				    <center><button type="submit" class="btn btn-default">Entrar</button></center><br>
-					<center><a href="https://thamiriss.github.io/Organique.github.io/cadastro.html">Cadastre-se</a></center>
-				 </form>
-				</div>
-		      </div>
-		</div>
-	</div>
-	
 	<div class="jumbotron text-center">
 		<h1>Organique</h1> 
 		 <p>Slogan</p> 
 	</div>
-	//nav bar 2
-		<nav class="navbar navbar-default">
-		  <div class="container">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>                        
-		      </button>
-		    </div>
-		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav">
-				<li><a href=" https://thamiriss.github.io/Organique.github.io/organique">INÍCIO</a></li>
-			<li><a href="https://thamiriss.github.io/Organique.github.io/frutas.html">FRUTAS E VERDURAS</a></li>
-			<li><a href="https://thamiriss.github.io/Organique.github.io/laticinios.html">LATICÍNIOS</a></li>
-			<li><a href="https://thamiriss.github.io/Organique.github.io/proteinas.html">PROTEÍNAS</a></li>
-			<li><a href="https://thamiriss.github.io/Organique.github.io/snacks.html">SNACKS</a></li>
-			<li><a href="https://thamiriss.github.io/Organique.github.io/bebidas.html">BEBIDAS</a></li>
-			<li><a href="https://thamiriss.github.io/Organique.github.io/kits.html">KITS, CESTAS E ASSINATURAS</a></li>
-		      </ul>
-		    </div>
-		  </div>
-		</nav> 
+	<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6"><br>
+    	<label for="nome">Nome Completo:</label>
+    	<input type="text" class="form-control" id="nome"><br>
+        
+        <label for="nome">CPF:</label>
+    	<input type="text" class="form-control" id="cpf"><br>
+        
+        <label for="email">Email:</label>
+    	<input type="email" class="form-control" id="email"><br>
+        
+        <label for="senha">Senha:</label>
+    	<input type="password" class="form-control" id="senha"><br>
+            	
+        <label for="cep">Cep:</label>
+    	<input type="text" class="form-control" id="cep"><br>
+        </div>
+    <div class="col-sm-6"><br>
+    	<label for="estado">Estado:</label>
+    	<input type="text" class="form-control" id="estado"><br>
+        
+        <label for="cidade">Cidade:</label>
+    	<input type="text" class="form-control" id="cidade"><br>
+        
+        <label for="bairro">Bairro:</label>
+    	<input type="text" class="form-control" id="bairro"><br>
+        
+        <label for="rua">Rua:</label>
+    	<input type="text" class="form-control" id="rua"><br>
+        
+        <div class="col-sm-6">
+        
+        <label for="numero">Número:</label>
+    	<input type="text" class="form-control" id="numero">
+        </div>
+        <div class="col-sm-6">
+        <label for="complemento">Complemento:</label>
+    	<input type="text" class="form-control" id="complemento">
+        </div>       
+  </div>
+</div>
+	
   </body>
 </html>
