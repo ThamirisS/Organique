@@ -3,7 +3,7 @@
 alter table USUARIO modify column status boolean;
 CREATE TABLE USUARIO (
     nome varchar(255),
-    status varchar(255),
+    status boolean,
     cpf bigint,
     id int not null auto_increment PRIMARY KEY,
     cep int,
@@ -17,8 +17,10 @@ CREATE TABLE PRODUTO (
     preco float,
     validade date,
     qtd int,
-    FK_MARCA_id int not null auto_increment,
-    FK_CATEGORIA_id int not null auto_increment
+    id_marca int,
+    id_categoria int,
+    foreign key(id_marca) references marca(id),
+    foreign key(id_categoria) references categoria(id)
 );
 
 CREATE TABLE MARCA (
@@ -30,7 +32,8 @@ CREATE TABLE COMPRA (
     id int not null auto_increment PRIMARY KEY,
     data date,
     status varchar(255),
-    FK_USUARIO_id int not null auto_increment
+    id_usuario int,
+    foreign key(id_usuario) references usuario(id)
 );
 
 CREATE TABLE CATEGORIA (
@@ -46,8 +49,10 @@ CREATE TABLE RESTRICAO (
 CREATE TABLE CONTATO (
     id int not null auto_increment PRIMARY KEY,
     contato varchar(255),
-    FK_USUARIO_id int not null auto_increment,
-    FK_TIPO_CONT_id int not null auto_increment
+    id_usuario int,
+    id_tipo_cont int,
+    foreign key(id_usuario) references usuario(id),
+    foreign key(id_tipo_cont) references categoria(id)
 );
 
 CREATE TABLE TIPO_CONT (
@@ -56,20 +61,26 @@ CREATE TABLE TIPO_CONT (
 );
 
 CREATE TABLE Comentario (
-    fk_PRODUTO_id int not null auto_increment,
-    fk_USUARIO_id int not null auto_increment,
+    id_produto int,
+    id_usuario int,
+    foreign key(id_usuario) references usuario(id),
+    foreign key(id_produto) references produto(id),
     id int not null auto_increment PRIMARY KEY,
     descricao varchar(255)
 );
 
 CREATE TABLE prod_restricao (
-    fk_RESTRICAO_id int not null auto_increment,
-    fk_PRODUTO_id int not null auto_increment
+    id_restricao int,
+    id_produto int,
+    foreign key (id_restricao) references restriaco(id),
+    foreign key(id_produto) references produto(id)
 );
 
 CREATE TABLE item_prod (
-    fk_PRODUTO_id int not null auto_increment,
-    fk_COMPRA_id int not null auto_increment,
+    id_produto int,
+    id_compra int,
+    foreign key (id_produto) references produto(id),
+    foreign key(id_compra) references compra(id),
     qtd int,
     id_item_comprado int not null auto_increment PRIMARY KEY
 );
