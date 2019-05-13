@@ -1,9 +1,9 @@
 ALTER TABLE usuario ALTER COLUMN cpf TYPE BIGINT;
 
 insert into usuario (nome, status, cpf, cep, n_casa, complemento) 
-values ('lia', 'adm', 12345678909, 123456, 43, 'fucape'), 
-('mari', 'adm', 23412345609, 23456, 50, 'ufes'), 
-('marina', 'clt', 35478989009, 67895, 20, ' ');
+values ('lia', 1, 12345678909, 123456, 43, 'fucape'), 
+('mari', 1, 23412345609, 23456, 50, 'ufes'), 
+('marina', 0, 35478989009, 67895, 20, ' ');
 
 insert into marca(nome)
 values('frutas do zé'),
