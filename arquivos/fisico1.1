@@ -52,7 +52,7 @@ CREATE TABLE CONTATO (
     id_usuario int,
     id_tipo_cont int,
     foreign key(id_usuario) references usuario(id),
-    foreign key(id_tipo_cont) references categoria(id)
+    foreign key(id_tipo_cont) references tipo_cont(id)
 );
 
 CREATE TABLE TIPO_CONT (
@@ -72,7 +72,7 @@ CREATE TABLE Comentario (
 CREATE TABLE prod_restricao (
     id_restricao int,
     id_produto int,
-    foreign key (id_restricao) references restriaco(id),
+    foreign key (id_restricao) references restriacao(id),
     foreign key(id_produto) references produto(id)
 );
 
