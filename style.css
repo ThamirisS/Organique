@@ -80,8 +80,8 @@
   }
   .panel-footer {
     background-color: white !important;
-	width: 250px;
-	height: 100px;
+	width: 100%;
+	height: 20%;
   }
   .panel-footer h4 {
     color: #aaa;
