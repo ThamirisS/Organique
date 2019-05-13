@@ -4,14 +4,14 @@ CREATE TABLE USUARIO (
     nome varchar(255),
     status varchar(255),
     cpf bigint,
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     cep int,
     n_casa int,
     complemento varchar(255)
 );
 
 CREATE TABLE PRODUTO (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     nome varchar(255),
     preco float,
     validade date,
@@ -21,43 +21,43 @@ CREATE TABLE PRODUTO (
 );
 
 CREATE TABLE MARCA (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     nome varchar(255)
 );
 
 CREATE TABLE COMPRA (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     data date,
     status varchar(255),
     FK_USUARIO_id serial
 );
 
 CREATE TABLE CATEGORIA (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     nome varchar(255)
 );
 
 CREATE TABLE RESTRICAO (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     tipo varchar(255)
 );
 
 CREATE TABLE CONTATO (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     contato varchar(255),
     FK_USUARIO_id serial,
     FK_TIPO_CONT_id serial
 );
 
 CREATE TABLE TIPO_CONT (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     tipo varchar(255)
 );
 
 CREATE TABLE Comentario (
-    fk_PRODUTO_id serial,
-    fk_USUARIO_id serial,
-    id serial PRIMARY KEY,
+    fk_PRODUTO_id int not null auto_increment,
+    fk_USUARIO_id int not null auto_increment,
+    id int not null auto_increment PRIMARY KEY,
     descricao varchar(255)
 );
 
