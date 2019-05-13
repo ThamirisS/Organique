@@ -16,8 +16,8 @@ CREATE TABLE PRODUTO (
     preco float,
     validade date,
     qtd int,
-    FK_MARCA_id serial,
-    FK_CATEGORIA_id serial
+    FK_MARCA_id int not null auto_increment,
+    FK_CATEGORIA_id int not null auto_increment
 );
 
 CREATE TABLE MARCA (
@@ -29,7 +29,7 @@ CREATE TABLE COMPRA (
     id int not null auto_increment PRIMARY KEY,
     data date,
     status varchar(255),
-    FK_USUARIO_id serial
+    FK_USUARIO_id int not null auto_increment
 );
 
 CREATE TABLE CATEGORIA (
@@ -45,8 +45,8 @@ CREATE TABLE RESTRICAO (
 CREATE TABLE CONTATO (
     id int not null auto_increment PRIMARY KEY,
     contato varchar(255),
-    FK_USUARIO_id serial,
-    FK_TIPO_CONT_id serial
+    FK_USUARIO_id int not null auto_increment,
+    FK_TIPO_CONT_id int not null auto_increment
 );
 
 CREATE TABLE TIPO_CONT (
@@ -62,15 +62,15 @@ CREATE TABLE Comentario (
 );
 
 CREATE TABLE prod_restricao (
-    fk_RESTRICAO_id serial,
-    fk_PRODUTO_id serial
+    fk_RESTRICAO_id int not null auto_increment,
+    fk_PRODUTO_id int not null auto_increment
 );
 
 CREATE TABLE item_prod (
-    fk_PRODUTO_id serial,
-    fk_COMPRA_id serial,
+    fk_PRODUTO_id int not null auto_increment,
+    fk_COMPRA_id int not null auto_increment,
     qtd int,
-    id_item_comprado serial PRIMARY KEY
+    id_item_comprado int not null auto_increment PRIMARY KEY
 );
  
 ALTER TABLE PRODUTO ADD CONSTRAINT FK_PRODUTO_2
