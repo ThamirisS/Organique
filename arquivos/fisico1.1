@@ -72,8 +72,9 @@ CREATE TABLE Comentario (
 CREATE TABLE prod_restricao (
     id_restricao int,
     id_produto int,
-    foreign key (id_restricao) references restriacao(id),
-    foreign key(id_produto) references produto(id)
+    foreign key (id_restricao) references restricao(id),
+    foreign key(id_produto) references produto(id),
+    id_prod_restricao int not null auto_increment PRIMARY KEY
 );
 
 CREATE TABLE item_prod (
