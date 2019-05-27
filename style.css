@@ -20,7 +20,7 @@
   .jumbotron {
     background-image:url(organique_img.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
