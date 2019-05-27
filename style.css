@@ -20,11 +20,11 @@
   .jumbotron {
     background-image:url(organique_img.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size auto;
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
-	margin-bottom: 0;
+    margin-bottom: 0;
   }
   .container-fluid {
     padding: 10px 50px;
