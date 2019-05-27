@@ -19,7 +19,8 @@
   }  
   .jumbotron {
     background-image:url(organique_img.png);
-	width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
