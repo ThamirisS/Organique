@@ -18,7 +18,7 @@
     margin-bottom: 30px;
   }  
   .jumbotron {
-    background-image:organique_img.png;
+    background-image:url(organique_img.png);
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
