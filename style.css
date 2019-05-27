@@ -65,12 +65,53 @@
   .item span {
     font-style: normal;
   }
+
+.qty .count {
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 2px;
+    min-width: 35px;
+    text-align: center;
+}
+
+.qty .plus .minus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid green;
+    background-color: #fff !important;
+    color: green;
+}
+.qty h2 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.minus:hover{
+    border: 1px solid green;
+    background-color: #fff !important;
+    color: green;   
+}
+.plus:hover{
+    border: 1px solid green;
+    background-color: #fff !important;
+    color: green;
+}
+
   .panel {
     border: 1px solid green; 
     border-radius:0 !important;
     transition: box-shadow 0.5s;
-	width: 260px;
-	height: 400px;
+    width: 260px;
+    height: 400px;
   }
   .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
@@ -82,7 +123,7 @@
   }
   .panel-footer {
     background-color: white !important;
-	width: 100%;
+    width: 100%;
   }
 
 .panel-body {
