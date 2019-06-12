@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4" style="background-color:orange;font-size: 16px;">
+    	<p> Produtos altamente selecionados para você escolher e adicionar ao seu carrinho.</p>
+    </div>
+    <div class="col-sm-4" style="background-color:green;font-size: 16px;">
+		<p>Quando estiver concluindo sua compra você coloca seu endereço e hora para efetuarmos a entrega.</p>    
+    </div>
+    <div class="col-sm-4" style="background-color:orange; font-size: 16px;">
+    	<p> O pagamento pode ser realizado usando o cartão, no site, ou pessoalmente na entrega.</p>    
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
