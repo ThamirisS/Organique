@@ -12,6 +12,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-4" style="background-color:orange;font-size: 16px;">
+    	<center><img src="carrinho-de-compras.png"></center>
     	<p> Produtos altamente selecionados para você escolher e adicionar ao seu carrinho.</p>
     </div>
     <div class="col-sm-4" style="background-color:green;font-size: 16px;">
