@@ -12,29 +12,23 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand">Organique</a>
+        
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Pedidos</a></li>
-          <li><a href="#">Produtos</a></li>
-          <li><a href="#">Comentários</a></li>
-      </nav>
-          <div class="tab-content">
-            <div id="pedidos" class="tab-pane fade in active">
-              //aqui vai o comentario pedidos
-            </div>
-         <div class="tab-content">
-            <div id="produtos" class="tab-pane fade in active">
-              //aqui vai o comentario pedidos
-            </div>
-          <div class="tab-content">
-            <div id="comentarios" class="tab-pane fade in active">
-              //aqui vai o comentario pedidos
-            </div>
+          <li class="active"><a data-toggle = "tab" href="#pedidos">Pedidos</a></li>
+          <li><a data-toggle = "tab" href="#produtos">Produtos</a></li>
+          <li><a data-toggle = "tab" href="#comentarios">Comentários</a></li>
         </ul>
+       </div> 
+      </nav>
+      
+	<div class="tab-content">
+      <div id="pedidos" class="tab-pane fade in active">
+       
+      <div class="row">
+ 	  <div class="col-xs-2">
       </div>
-    </nav>
-	      
-    <form class="form-inline" action="/action_page.php">
+      <div class="col-xs-9">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Procure por Pedidos" name="search">
         <div class="input-group-btn">
@@ -43,7 +37,10 @@
           </button>
         </div>
       </div>
-	</form>
+      </div>
+      </div>
+      <br>
+	
     
     <div class="panel panel-default">
   		<div class="panel-body">
@@ -53,10 +50,10 @@
         </div>
         <div class="media-body">
         <div class="row">
-        <div class="col-md-6">
+        <div class="col-xs-6">
           <h4 class="media-heading">Código do Pedido: XXXX</h4>
        	</div>
-        <div class="col-md-6">
+        <div class="col-xs-6">
         	<h4 class="media-heading">Status Pedido: </h4>
         </div>
         </div>
@@ -73,10 +70,110 @@
           <br>
           <p>Valor Total da Compra</p>
           <p>Forma de Pagamento</p>
-          <p>Endereço do Cliente<p>
+          <p>Endereço do Cliente</p>
         </div>
       </div>
       </div>
 	</div>
+         </div>
+         
+         
+         
+         
+            <div id="produtos" class="tab-pane fade">
+              <!-- /Pesquisa e Adicionar -->	
+        <div class="row">
+        	<div class="col-xs-1">
+            </div>
+  			<div class="col-xs-9">
+            	<div class="input-group">
+        		<input type="text" class="form-control" placeholder="Search" name="search">
+        		<div class="input-group-btn">
+          		<button class="btn btn-default" type="submit">
+            	<i class="glyphicon glyphicon-search"></i>
+          		</button>
+        	 	</div>
+      	 		</div>
+     		</div>
+  			<div class="col-xs-1">
+            <center>
+            <button type="button" class="btn btn-success active"><b>+</b></button>
+            </center>
+            </div>
+            <div class="col-xs-1">
+            </div>
+		</div>
+    <br>
+    
+     <!-- /Produto 1 -->
+     <div id="" class="panel panel-default">
+     	<div class="row">
+        	<div class="col-xs-1">
+            </div>
+            <div class="col-xs-3">
+            	<img src="https://organomix.vteximg.com.br/arquivos/ids/14761-130-130/DSC02979.jpg?v=635659162607130000" width="130" height="130" alt="DSC02979" id="" />
+            </div>
+            <div class="col-xs-5">
+            	<h4>Alface tal de tal</h4>
+                <h5><b>Quantidade em estoque </b>10</h5>
+                <h5><b>Preço </b>20,00</h5>
+                <h5><b>Restrições</b></h5>
+            </div>
+            <div class="col-xs-2">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Excluir</button>
+  <button type="button" class="btn btn-default btn-lg btn-block">Editar</button>
+            </div>
+            <div class="col-xs-1">
+            </div>
+        </div>
+      </div> 
+     </div>
+     
+     
+     
+     
+            <div id="comentarios" class="tab-pane fade">
+              <div class="container">
+	<br>
+   <div class="panel panel-default">
+  		<div class="panel-body">
+           <div class="media">
+           
+              <div class="media-left">
+                <img src="img_avatar1.png" class="media-object" style="width:60px">
+              </div>
+              
+              <div class="media-body">
+                <h4 class="media-heading">Laira Arial <small><i>Posted on February 19, 2016</i></small></h4>
+                <p>comentario do usuario</p>
+              </div>
+              
+              <div class="media-right">
+                <img src="img_avatar1.png" class="media-object" style="width:60px">
+              </div>
+              
+          </div>
+          <hr>
+          
+          <div class="media">
+          
+              <div class="media-body">
+              	<h4 class="media-heading">Resposta</h4>
+              	<p><input class="form-control input-sm" rows="5" id="resposta" type="text"></p>
+              </div>
+              
+              <div class="media-right">
+                 <br>
+                 <p><button type="submit" class="btn btn-primary btn-sm btn-success">Enviar</button></p>
+              </div>
+              
+           </div>
+         </div>
+       </div>
+   </div>
+
+      </div>
+     </div>
   </body>
+</html>
 </html>
