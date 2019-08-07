@@ -11,7 +11,7 @@ CREATE TABLE USUARIO (
 );
 
 CREATE TABLE PRODUTO (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     nome varchar(255),
     preco float,
     validade date,
