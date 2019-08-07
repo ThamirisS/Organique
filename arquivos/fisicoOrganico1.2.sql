@@ -68,7 +68,7 @@ CREATE TABLE comentario (
     fk_PRODUTO_id int,
     fk_USUARIO_id int,
     id int not null auto_increment PRIMARY KEY,
-    descricao varchar(100),
+    descricao varchar(100)
 );
 
 CREATE TABLE prod_restricao (
