@@ -4,7 +4,7 @@ CREATE TABLE USUARIO (
     nome varchar(255),
     status varchar(255),
     cpf int,
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     cep int,
     n_casa int,
     complemento varchar(255)
@@ -16,74 +16,72 @@ CREATE TABLE PRODUTO (
     preco float,
     validade date,
     qtd int,
-    FK_MARCA_id serial,
-    FK_CATEGORIA_id serial
+    FK_MARCA_id int,
+    FK_CATEGORIA_id int
 );
 
 CREATE TABLE MARCA (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     nome varchar(255)
 );
 
 CREATE TABLE COMPRA (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     data date,
     status varchar(255),
-    FK_USUARIO_id serial
+    FK_USUARIO_id int
 );
 
 CREATE TABLE CATEGORIA (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     nome varchar(255)
 );
 
 CREATE TABLE RESTRICAO (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     tipo varchar(255)
 );
 
 CREATE TABLE CONTATO (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     contato varchar(255),
-    FK_USUARIO_id serial,
-    FK_TIPO_CONT_id serial
+    FK_USUARIO_id int,
+    FK_TIPO_CONT_id int
 );
 
 CREATE TABLE TIPO_CONT (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     tipo varchar(255)
 );
 
 CREATE TABLE FORNECEDOR (
-    id serial PRIMARY KEY,
+    id int not null auto_increment PRIMARY KEY,
     cep int,
     complemneto varchar(80),
     n_casa int,
     info varchar(255),
     certificado varchar(255),
-    FK_PRODUTO_id serial
+    FK_PRODUTO_id int
 );
 
 CREATE TABLE comentario (
-    fk_PRODUTO_id serial,
-    fk_USUARIO_id serial,
-    id serial PRIMARY KEY,
+    fk_PRODUTO_id int,
+    fk_USUARIO_id int,
+    id int not null auto_increment PRIMARY KEY,
     descricao varchar(100),
-    id_prod int,
-    id_usu int
 );
 
 CREATE TABLE prod_restricao (
-    fk_RESTRICAO_id serial,
-    fk_PRODUTO_id serial,
-    id_prod_restricao serial PRIMARY KEY
+    fk_RESTRICAO_id int,
+    fk_PRODUTO_id int,
+    id_prod_restricao int not null auto_increment PRIMARY KEY
 );
 
 CREATE TABLE item_prod (
-    fk_PRODUTO_id serial,
-    fk_COMPRA_id serial,
+    fk_PRODUTO_id int,
+    fk_COMPRA_id int,
     qtd int,
-    id_item_comprado serial PRIMARY KEY
+    id_item_comprado int not null auto_increment PRIMARY KEY
 );
  
 ALTER TABLE PRODUTO ADD CONSTRAINT FK_PRODUTO_2
